@@ -28,7 +28,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
     northeast: const LatLng(2.9640, 101.5820),
   );
 
-  static const String googleMapsApiKey = "AIzaSyBmTHCUF2VxLjI5X_lDebOhXlWm1SZ6tgc"; // Direction Routing Key
+  static const String googleMapsApiKey = "AIzaSyBv3UKXt7Oqg6-hKgrYCtu5BS2DZEreeNA"; // Direction Routing Key
 
   List<CampusLocation> _locations = [];
   Set<Marker> _markers = {};
