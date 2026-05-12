@@ -1,8 +1,8 @@
-# 🗺️ MAHSA Smart Campus Navigation 
+# 🗺️ MAHSA Smart Campus Navigation And Service Web App 
 
 A cross-platform, full-stack navigation progressive web app (PWA) built to solve complex outdoor routing for university campuses. Engineered with Flutter, Firebase, and the Google Maps Platform.
 
-**🔗 [View Live Application](https://mahsa-smart-campus-navig81bae.web.app/)**
+**🔗 [View Live Application](https://mahsa-smart-campus-navig-81bae.web.app/)**
 
 ## 🚀 Overview
 Navigating a sprawling university campus can be overwhelming for new students and visitors. This application provides real-time, highly accurate routing to specific campus landmarks (e.g., Empathy Building, and Mahsa Student Residence Hostel) bypassing the limitations of standard GPS routing which often fails to map internal campus walkways.
