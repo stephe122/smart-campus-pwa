@@ -10,6 +10,7 @@ import 'package:http/http.dart' as http;
 import 'package:mahsa_navigation/models/campus_location.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:mahsa_navigation/config/secrets.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
@@ -28,7 +29,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
     northeast: const LatLng(2.9640, 101.5820),
   );
 
-  static const String googleMapsApiKey = "AIzaSyBv3UKXt7Oqg6-hKgrYCtu5BS2DZEreeNA"; // Direction Routing Key
+  static const String googleMapsApiKey = "Secrets.directionRoutingKey"; // Direction Routing Key
 
   List<CampusLocation> _locations = [];
   Set<Marker> _markers = {};
@@ -223,7 +224,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
       }
 
       final String apiUrl = "https://maps.googleapis.com/maps/api/directions/json?origin=${apiStartPoint.latitude},${apiStartPoint.longitude}&destination=${apiDestination.latitude},${apiDestination.longitude}&mode=walking&key=$googleMapsApiKey";
-      final String proxyUrl = "https://api.allorigins.win/get?url=${Uri.encodeComponent(apiUrl)}";
+      final String proxyUrl = "https://api.allorigins.win/raw?url=${Uri.encodeComponent(apiUrl)}";
 
       final response = await http.get(Uri.parse(proxyUrl));
 

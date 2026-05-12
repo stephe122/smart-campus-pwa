@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart' show  kIsWeb;
+import 'package:mahsa_navigation/config/secrets.dart';
 
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
@@ -12,12 +13,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: "AIzaSyC7zZMtnSnbbfTWWJlXU3qWS-hQ5LayAYE",
+    apiKey: "Secrets.firebaseApiKey",
   authDomain: "mahsa-smart-campus-navig-81bae.firebaseapp.com",
   projectId: "mahsa-smart-campus-navig-81bae",
   storageBucket: "mahsa-smart-campus-navig-81bae.firebasestorage.app",
   messagingSenderId: "419359408974",
-  appId: "1:419359408974:web:3f292a80724ed95653d41f",
+  appId: "1:419359408974:web:f3ce7349532d5ba653d41f",
   measurementId: "G-SR49F24WR6"
 
   );
